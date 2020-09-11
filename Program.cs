@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 namespace C__School
@@ -39,70 +39,49 @@ namespace C__School
                     |/_____\|/_____\|/_____\|/_____\|  
                     
                     ");                                                                                                        
-                string input = Console.ReadLine();
+                int input = Convert.ToInt32(Console.ReadLine());
                 //tom rad innan användarens val körs
                 Console.WriteLine(" ");
 
+                if (input >= 1 && input <= 9)
+                {Console.WriteLine($"Du är inne i rum {input} och till din häpnad ser du\n..."); 
+                Thread.Sleep(1000);
+                }
                 switch (input)
                 {
                     
-                    case "1":
-                        Console.WriteLine("Du är inne i rum 1 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 1:
                         Console.WriteLine("Ingenting alls. Rummet är tomt. You just got yeeted");
                         break;
-                    case "2":
-                     
-                        Console.WriteLine("Du är inne i rum 2 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 2:
                         Console.WriteLine("Ingenting alls. Rummet är tomt. You just got yeeted");
                         break;
 
-                    case "3":
-                        Console.WriteLine("Du är inne i rum 3 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 3:
                         Console.WriteLine("Mona lisa. WOW!");
                         break;
 
-                    case "4":
-                        Console.WriteLine("Du är inne i rum 4 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 4:
                         Console.WriteLine("En riktigt stor hand. Du blev precis örfilad");
                         break;
 
-                    case "5":
-                        Console.WriteLine("Du är inne i rum 5 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 5:
                         Console.WriteLine("Ingenting alls. Rummet är tomt. You just got yeeted");
                         break;
 
-                    case "6":
-                        Console.WriteLine("Du är inne i rum 6 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 6:
                         Console.WriteLine("Gustav. Vänta va? Vad gör du här?");
                         break;
                     
-                    case "7":
-                        Console.WriteLine("Du är inne i rum 7 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 7:
                         Console.WriteLine("En banan. Wait, is this art?");
                         break;
 
-                    case "8":
-                        Console.WriteLine("Du är inne i rum 8 och till din häpnad ser du");
-                        Thread.Sleep(1000);
-                        Console.WriteLine("...");
+                    case 8:
                         Console.WriteLine("Ingenting alls. Rummet är tomt. Did i really pay for this?");
                         break;
 
-                    case "9":
+                    case 9:
                      return;
 
                     default:
